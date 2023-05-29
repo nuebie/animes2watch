@@ -1,0 +1,493 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Noto+Sans+JP:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Darumadrop+One&display=swap');
+
+/* CSS FOR DIV 1 & DIV 2*/
+
+* {
+    margin: 0;
+    padding: 0;
+  }
+
+div{
+    /*border: 1px solid;*/
+}
+
+.webname{
+    padding: 8px;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+.headertext{
+    font-family: 'Poppins', sans-serif;
+    color: #273160;
+    font-size: 5.5rem;
+    line-height: 1.3;
+    margin-bottom: 5%;
+}
+
+.subtext{
+    font-family: 'Open Sans', sans-serif;
+    color: #273160;
+    font-size: 1.5rem;
+    margin-bottom: 5%;
+}
+
+.div1{
+    background-color: #EEF0FB;
+}
+
+.div2{
+    display: flex;
+    flex-direction: row;
+    background-color: #EEF0FB;
+    align-items: center;
+    background-image: url('blob-haikei.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    padding: 5%;
+}
+
+.image {
+    flex: 1;
+    text-align: center;
+    padding: 3%;
+  }
+  
+.image img {
+    height: auto;
+    width: 100%;
+}
+
+
+.trybuttondiv{
+    display: flex;
+    align-items: center;
+}
+
+/* CSS */
+.button-66 {
+  background-color: #0a6bff;
+  background-color: #6FB8F1;
+  border-radius: 4px;
+  border: 0;
+  box-shadow: rgba(1,60,136,.5) 0 -1px 3px 0 inset,rgba(0,44,97,.1) 0 3px 6px 0;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: inherit;
+  font-family: 'Open Sans', sans-serif;
+  color: #273160;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  margin: 0;
+  min-height: 56px;
+  min-width: 120px;
+  max-width: 150px;
+  padding: 16px 20px;
+  position: relative;
+  text-align: center;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  transition: all .2s cubic-bezier(.22, .61, .36, 1);
+  text-align: center;
+}
+
+.button-66:hover {
+  background-color: #0a6bff;
+  transform: translateY(-2px);
+}
+
+
+
+/* CSS FOR DIV 3 */
+
+.div3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #FFFFFF;
+    position: relative;
+  }
+  
+  #searchform {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  #searchinput {
+    width: 100%;
+    max-width: 500px;
+    padding: 0px 0px; /* Adjust the padding values */
+    border: none;
+    border-bottom: 3px solid #b2b4b2;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 2rem;
+    text-align: center;
+
+    position: relative;
+    z-index: 1;
+  }
+  
+  #searchinput:focus {
+    outline: none;
+  }
+
+  #searchlist {
+    width: 100%;
+    max-width: 500px;
+    list-style-type: none;
+    padding: 0;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin-bottom: 5%;
+    position: absolute;
+    z-index: 2;
+    background-color: white;
+    top: 80%;
+    transform: translateY(0px); /* Adjust the value as needed */
+  }
+
+  #searchlist li:hover {
+    background-color: #ddd;
+  }
+  
+  #searchlist li {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.0rem;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+  }
+
+
+  /* CSS FOR DIV 4 */
+  .div4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    min-height: 30%;
+    /*border-bottom: 1px solid #ddd;*/
+  }
+
+  .selectedanimestext{
+    font-family: 'Source Code Pro', monospace;
+    width: 100%;
+    max-width: 50%;
+    font-size: 2rem;
+    margin-bottom: 1%;
+  }
+  
+  .selectedanimelist {
+    width: 100%;
+    max-width: 50%;
+    list-style-type: none;
+    padding: 0px;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+    border-radius: 5px;
+    margin-bottom: 1%;
+    min-height: 10rem;
+  }
+  
+  .selectedanimelist li {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border: 1px solid #ddd;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 2rem;
+    position: relative;
+    margin: 2%;
+  }
+
+  .removebutton {
+    position: absolute;
+    top: -20;
+    right: -20;
+    margin: 10px;
+    background-color: #273160;
+    color: white;
+    padding: 5px 8px;
+    border: none;
+    cursor: pointer;
+    font-family: 'Darumadrop One', cursive;
+    font-size: 0.8rem;
+  }
+
+
+  .selectedanimelist li .animetitle{
+    text-align: center;
+    /*border: 1px solid;*/
+    flex: 1;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .selectedanimelist li div{
+    justify-content: center;
+    flex: 1;
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .rating__star:hover,
+.rating__star:hover ~ .rating__star {
+    color: transparent;
+}
+
+.rating__star.selected,
+.rating__star.selected ~ .rating__star {
+  color: #eab308;
+}
+
+/*
+Make all previous stars selected when hover on a star
+Note that we use \`flex-direction: row-reverse\` on the container
+*/
+.rating__star:hover:before,
+.rating__star:hover ~ .rating__star:before {
+    color: #eab308;
+    content: '★';
+    left: 0;
+    position: absolute;
+}
+
+.rating__star {
+    font-size: 2.0rem;
+
+    /* Reset styles for button */
+    background-color: transparent;
+    border: transparent;
+    margin: 0 2px;
+    padding: 0;
+
+    /* Used to position the hover state */
+    position: relative;
+}
+
+  /* CSS FOR DIV 5 */
+
+  .div5 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    min-height: 30%;
+  }
+
+  .recommendedanimestext{
+    font-family: 'Source Code Pro', monospace;
+    width: 100%;
+    max-width: 50%;
+    font-size: 2rem;
+    margin-bottom: 1%;
+  }
+
+  .loader_recommendation_container{
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+    width: 100%;
+    max-width: 50%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    min-height: 20rem;
+  }
+
+  .loadercontainer{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.3rem;
+  }
+
+  .recommendationlist {
+    width: 100%;
+    list-style-type: none;
+    padding: 0;
+    border-radius: 5px;
+    margin-bottom: 1%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:flex-start;
+  }
+
+  .recommendationlist li {
+    flex-grow: 1;
+    margin: 1%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 2rem;
+    word-wrap: break-word;
+  }
+  
+
+  /*Table Test*/
+  .recommendationtable{
+    width: 100%;
+    max-width: 50%;
+    list-style-type: none;
+    padding: 0;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+    border-radius: 5px;
+    margin-bottom: 1%;
+  }
+
+  .recommendationtable tr{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .recommendationtable tr td{
+    flex: 1;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .blob {
+   width: 144px;
+   height: 144px;
+   display: grid;
+   background: #fff;
+   filter: blur(5.8px) contrast(10);
+   padding: 14.4px;
+   mix-blend-mode: darken;
+}
+
+.blob:before {
+   content: "";
+   margin: auto;
+   width: 43.2px;
+   height: 43.2px;
+   border-radius: 50%;
+   color: #0006f0;
+   background: currentColor;
+   box-shadow: -43.2px 0,43.2px 0,0 43.2px, 0 -43.2px;
+   animation: blob-031hhglg 1s infinite alternate;
+}
+
+@keyframes blob-031hhglg {
+   90%, 100% {
+      box-shadow: -14.4px 0,14.4px 0,0 14.4px, 0 -14.4px;
+      transform: rotate(180deg);
+   }
+}
+
+@keyframes ellipsis {
+  0% { opacity: 0; }
+  33.3% { opacity: 1; }
+  66.6% { opacity: 1; }
+  100% { opacity: 1; }
+}
+
+
+.ellipsis {
+  text-align: left;
+  overflow: hidden;
+  animation: ellipsis 1.5s infinite;
+}
+
+.ellipsis span {
+  opacity: 0;
+  animation: ellipsis 1.5s infinite;
+}
+
+.ellipsis span:nth-child(1) {
+  animation-delay: 0.2s;
+}
+
+.ellipsis span:nth-child(2) {
+  animation-delay: 0.4s;
+}
+
+.ellipsis span:nth-child(3) {
+  animation-delay: 0.6s;
+}
+  
+
+  /* Responsive styles */
+@media (max-width: 768px) {
+    .div2 {
+      flex-direction: column;
+    }
+
+    .image {
+      text-align: center;
+      padding: 1%;
+    }
+
+    .header {
+        font-size: 1.5rem;
+        padding: 5%;
+    }
+
+    .button-66 {
+        padding: 16px 44px;
+        min-width: 150px;
+    }
+
+    .headertext{
+        font-size: 1.5rem;
+        line-height: 1.3;
+        margin-bottom: 5%;
+    }
+
+    .subtext{
+        font-size: 1.0rem;
+        margin-bottom: 5%;
+    }
+
+    #searchinput {
+        width: 100%;
+        font-size: 1.5rem;
+      }
+
+    .searchrecommendation{
+      font-size: 1.0rem;
+    }
+
+    .selectedanimelist li {
+        flex-direction: column;
+        font-size: 1.0rem;
+    }
+
+    .recommendedanimestext{
+      font-size: 1.5rem;
+    }
+
+    .recommendationtable tr{
+      flex-direction: column;
+    }
+
+    .recommendationlist li{
+      font-size: 1.0rem;
+    }
+
+}
+

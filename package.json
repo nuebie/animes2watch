@@ -1,0 +1,13 @@
+{
+  "dependencies": {
+    "@firebase/firestore": "^3.12.1",
+    "firebase": "^9.22.1"
+  },
+  "devDependencies": {
+    "webpack": "^5.84.1",
+    "webpack-cli": "^5.1.1"
+  },
+  "scripts": {
+    "build": "webpack --mode development"
+  }
+}

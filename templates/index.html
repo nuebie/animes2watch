@@ -1,0 +1,157 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='index.css') }}">
+</head>
+<body>
+    <div id="div1" class="div1">
+        <h1 class="webname">Animes2Watch</h1>
+    </div>
+
+    <div id="div2" class="div2">
+        <div class="header" class="head">
+            <h1 class="headertext">Looking For a New Anime to Watch?</h1>
+            <p class="subtext">
+                Rate a few animes that you have watched and we will recommend some animes that you might enjoy using Artificial Intelligence (AI).
+            </p>
+            <div class="trybuttondiv">
+                <button class="button-66" role="button" id="trybutton">Try Now</button>
+            </div>
+        </div>
+        <div class="image" class="image">
+            <img src="{{ url_for('static', filename='sampleimg.jpg') }}" alt="Description">
+            <!--<img src="static/sampleimg.jpg'" alt="Description">!-->
+        </div>
+    </div>
+
+    <div id="div3" class="div3">
+        <form action="" id="searchform">
+            <input type="text" id="searchinput" class="searchinput" placeholder="Search and Rate Animes">
+        </form>
+
+        <ul id="searchlist" class="searchlist">
+            <!--<li>Test</li>
+            <li>Test</li>
+            <li>Test</li>
+            <li>Test</li>
+            <li>Test</li>
+            <li>Test</li>-->
+        </ul>
+    </div>
+
+    <div id="div4" class="div4">
+        <span class="selectedanimestext">Selected Animes:</span>
+        <ul id="selectedanimelist" class="selectedanimelist">
+            <!--<li><span class="animetitle">Jujutsu Kaisen</span>
+                <div>
+                    <span class="rating__star">★</span>
+                    <span class="rating__star">★</span>
+                    <span class="rating__star">★</span>
+                    <span class="rating__star">★</span>
+                    <span class="rating__star">★</span>
+                </div>
+                <button class="removebutton">X</button>
+            </li>
+
+            <li><span class="animetitle">test</span>
+                <div>
+                    <span>★</span>
+                    <span>★</span>
+                    <span>★</span>
+                    <span>★</span>
+                    <span>★</span>
+                </div>
+                <button class="removebutton">X</button>
+            </li>
+
+            <li><span class="animetitle">test</span>
+                <div>
+                    <span>★</span>
+                    <span>★</span>
+                    <span>★</span>
+                    <span>★</span>
+                    <span>★</span>
+                </div>
+                <button class="removebutton">X</button>
+            </li>
+
+            <li><span class="animetitle">Attack on Titan</span>
+                <div>
+                    <span>★</span>
+                    <span>★</span>
+                    <span>★</span>
+                    <span>★</span>
+                    <span>★</span>
+                </div>
+                <button class="removebutton">X</button>
+            </li>
+
+            <li><span class="animetitle">test</span>
+                <div>
+                    <span>★</span>
+                    <span>★</span>
+                    <span>★</span>
+                    <span>★</span>
+                    <span>★</span>
+                </div>
+                <button class="removebutton">X</button>
+            </li>!-->
+        </ul>
+        <div class="trybuttondiv2">
+            <button class="button-66" role="button" id="submitbutton">Submit</button>
+        </div>
+    </div>
+
+    <div id="div5" class="div5">
+        <span class="recommendedanimestext">Anime Recommendations:</span>
+        <div class="loader_recommendation_container">
+            <div id="loadercontainer" class="loadercontainer">
+                <div class="blob" id="loader"></div>
+                <span id="loadingText">Generating Recommendations<span class="ellipsis"><span>.</span><span>.</span><span>.</span></span></span>
+            </div>
+            <ul id="recommendationlist" class="recommendationlist">
+                <!--<li>Test</li>
+                <li>Test</li>
+                <li>Test</li>
+                <li>Test</li>
+                <li>Test</li>
+                <li>Test</li>
+                <li>Test</li>
+                <li>Test</li>
+                <li>Test</li>
+                <li>Test</li>!-->
+            </ul>
+        </div>
+
+        <!--<table class="recommendationtable">
+            <tr>
+                <td>Test</td>
+                <td>Test</td>
+            </tr>
+            <tr>
+                <td>Naruto</td>
+                <td>Attack on Titan</td>
+            </tr>
+            <tr>
+                <td>Jujutsu kaisen</td>
+                <td>Demon Slayer: Kimtesu no yaibai</td>
+            </tr>
+            <tr>
+                <td>Vinland Saga</td>
+                <td>Inuyasha</td>
+            </tr>
+            <tr>
+                <td>Vinland Saga</td>
+                <td>Inuyasha</td>
+            </tr>
+        </table>!-->
+    </div>
+
+    <!--<script type="module" src="{{ url_for('static', filename='index.js') }}"></script>!-->
+    <script src="{{ url_for('serve_dist', filename='bundle.js') }}"></script>
+</body>
+</html>
